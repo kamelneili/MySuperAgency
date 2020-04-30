@@ -1,0 +1,26 @@
+{% extends "base.html.twig"%}
+{% block body %}
+<h1> Inscription sur le site </h1>
+   <div id="contactForm" class="mt-4" >
+         {{form_start(form)}}
+         <div class="row">
+             <div class="col">{{form_row(form.username, {'label':'Nom d\'utilisateur',
+             'attr':{'placeholder':'nom d\'utilisateur ...'}})}}</div>
+             <div class="col">{{form_row(form.email, {'label':'Email d\'utilisateur...',
+             'attr':{'placeholder':'adresse email ...'}})}}</div>
+    </div> 
+    <div class="row">
+             <div class="col">{{form_row(form.password, {'label':'Mot de passe',
+             'attr':{'placeholder':'mot de passe ...'}})}}</div>
+    </div> 
+    <div class="row">
+             <div class="col">{{form_row(form.confirm_password, {'label':'Confirmation du mot de passe',
+             'attr':{'placeholder':'répétez votre mot de passe ...'}})}}</div>
+    </div> 
+    <div class="form-group">
+        <button class="btn btn-primary">inscription</button>
+    </div>    
+    {{form_end(form)}}
+
+            </div>   
+{% endblock %}

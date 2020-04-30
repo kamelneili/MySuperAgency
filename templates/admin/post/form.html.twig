@@ -1,0 +1,18 @@
+          <form enctype="multipart/form-data" class="dropzzzzzone" action="{{ app.request.uri }}" method="post" name="acme_dropzone_form" id="acme_dropzone_form">
+
+     {{form_start(form)}}
+     <div class="row">
+         <div class="col-md-4">     {{form_row(form.title)}}</div>
+         <div class="col-md-4">     {{form_row(form.content)}}</div>
+     </div> 
+     
+
+
+
+
+
+
+
+     {{form_rest(form)}}
+     <button class="btn btn-primary">{{button}}</button>
+     {{form_end(form)}}

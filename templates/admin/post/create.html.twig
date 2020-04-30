@@ -1,0 +1,13 @@
+{% extends "template.html.twig"%}
+{% block body %}
+<div class="container mt-4">
+    <h2> Creer un bien</h2>
+     {{include('admin/post/form.html.twig',{form:form,button:'Creer'})}}
+    
+</div> 
+    
+{% endblock %}
+ 
+{% block javascripts %}
+    <script src="{{ asset('js/dropzone.js') }}"></script>
+    {% endblock %}

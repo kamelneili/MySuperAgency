@@ -1,0 +1,7 @@
+property.index:
+    path: /biens
+    controller: App\Controller\PropertyController::index
+oneup_uploader:
+    resource: .
+    type: uploader
+    

@@ -1,0 +1,9 @@
+{% extends "template.html.twig"%}
+{% block body %}
+<div class="container mt-4">
+    <h2> Creer une option</h2>
+     {{include('admin/option/form.html.twig',{form:form,button:'Creer'})}}
+    
+</div> 
+    
+{% endblock %}
